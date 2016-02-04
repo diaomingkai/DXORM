@@ -8,19 +8,24 @@ import java.util.List;
  * Created by diaomingkai on 2016-2-3.
  */
 public class Db implements IDao {
-    public int insert() {
+
+    public <T> int insert(T entity) {
         return 0;
     }
 
-    public int update() {
+    public <T> int update(T entity) {
         return 0;
     }
 
-    public <T> T one() {
+    public <T> T one(T entity) {
         return null;
     }
 
-    public <T> List<T> list() {
+    public <T> List<T> list(T entity) {
         return null;
+    }
+
+    public int delete(String id) {
+        return 0;
     }
 }
